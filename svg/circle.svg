@@ -1,0 +1,6 @@
+<svg width="300"  height="300" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="150" cy="150" r="150" fill="red"></circle>
+    <text x="0" y="280" fill="pink" font-size="12">
+      作为外部资源引入
+    </text>
+  </svg>

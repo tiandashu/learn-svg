@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>learn-svg</title>
+</head>
+<body>
+  参考文章：
+  <ul>
+    <li>https://aotu.io/notes/2017/01/22/snapsvg/index.html</li>
+    <li>https://www.zhangxinxu.com/GitHub/demo-Snap.svg/demo/basic/Element.add.php</li>
+  </ul>
+  <img src="./svg/circle.svg" alt="" width="100">
+  <embed src="./svg/circle.svg" width="300" height="200" 
+    type="image/svg+xml"
+    pluginspage="http://www.adobe.com/svg/viewer/install/" />
+
+  <svg id="svg"></svg>
+</body>
+<script src="./Snap.svg-0.5.1/dist/snap.svg.js"></script>
+<script>
+// 动画样例1
+var svg = Snap('#svg');
+svg.paper.circle({
+    cx: 100,
+    cy: 100,
+    r: 50,
+    fill: '#f00'
+});
+svg.select('circle').animate({r: 100}, 1000, mina.easeout(), function() {
+    console.log('animation end');
+});
+
+
+</script>
+</html>
